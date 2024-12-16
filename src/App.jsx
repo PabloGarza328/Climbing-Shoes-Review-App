@@ -30,6 +30,8 @@ import products from './data/products.js';
 
 function App() {
   const [shoe, setShoes] = useState([]);
+  
+  console.log(shoe)
 
 
 

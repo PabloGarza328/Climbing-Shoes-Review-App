@@ -9,7 +9,7 @@ import GalleryPage from './modules/GalleryPage.jsx';
 import OrderPage from './modules/OrderPage.jsx';
 import StaffPage from './modules/StaffPage.jsx';
 import TopicsPage from './modules/TopicsPage.jsx';
-import Navigation from './modules/navigation.jsx';
+import Navigation from './modules/Navigation.jsx';
 import ContactPage from './modules/ContactPage.jsx';
 import Counter from './modules/counter.jsx'
 

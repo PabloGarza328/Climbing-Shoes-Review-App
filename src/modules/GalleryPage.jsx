@@ -1,32 +1,32 @@
-import lsu from '../assets/the-money-game-lsu-screenshot_.png'
-import gear from '../assets/climbing-gear.jpeg'
-import india from '../assets/pablo-india-travels-2.jpeg'
-import hiking from '../assets/hiking-hobbies.jpeg'
-import potrero from '../assets/potrero-chico-sunrise.jpeg'
+// import lsu from '../assets/the-money-game-lsu-screenshot_.png'
+// import gear from '../assets/climbing-gear.jpeg'
+// import india from '../assets/pablo-india-travels-2.jpeg'
+// import hiking from '../assets/hiking-hobbies.jpeg'
+// import potrero from '../assets/potrero-chico-sunrise.jpeg'
 
 const images = [
     {
-        filepath: '/src/assets/the-money-game-lsu-screenshot_.png',
+        filepath: '/assets/the-money-game-lsu-screenshot_.png',
         caption: 'Poster from the documentary series I edited, "The Money Game LSU" about student athletes.',
         title: "&copy; 2022 Pablo Garza"
     },
     {
-        filepath: '/src/assets/climbing-gear.jpeg',
+        filepath: '/assets/climbing-gear.jpeg',
         caption: 'Some of my climbing equipment laid out before a day out.',
         title: "&copy; 2022 Pablo Garza"
     },
     {
-        filepath: '/src/assets/pablo-india-travels-2.jpeg',
+        filepath: '/assets/pablo-india-travels-2.jpeg',
         caption: 'My father and I visiting an ancient stepwell in India.',
         title: "&copy; 2022 Pablo Garza"
     },
     {
-        filepath: '/src/assets/hiking-hobbies.jpeg',
+        filepath: '/assets/hiking-hobbies.jpeg',
         caption: 'Photography taken by me while hiking down a volcano.',
         title: "&copy; 2022 Pablo Garza"
     },
     {
-        filepath: '/src/assets/potrero-chico-sunrise.jpeg',
+        filepath: '/assets/potrero-chico-sunrise.jpeg',
         caption: 'Photography taken by me of sport climbing mecca "Potrero Chico".',
         title: "&copy; 2022 Pablo Garza"
     }, 

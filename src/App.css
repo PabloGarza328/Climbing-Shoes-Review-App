@@ -31,7 +31,7 @@
   body {       /* Can alternatively define in html {}. */
    
     background-color:;
-    background-image:url(src/assets/Backgorund-trees-blur.jpg);
+    background-image:url(/assets/Backgorund-trees-blur.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

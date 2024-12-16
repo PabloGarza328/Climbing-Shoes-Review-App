@@ -17,7 +17,7 @@ function ShoesPage( {setShoe} ){
     // Retrieves/loads all the movies in the collection, so they are visible. 
     console.log("About to read shoes")
     const loadShoes = async () => {
-        const response = await fetch('https://osucs-290-back.vercel.app/shoes');
+        const response = await fetch('/shoes');
         const shoes = await response.json();
         setShoes(shoes);
          }

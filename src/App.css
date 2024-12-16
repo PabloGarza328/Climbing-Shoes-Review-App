@@ -30,7 +30,6 @@
   /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
   body {       /* Can alternatively define in html {}. */
    
-    background-color:;
     background-image:url(/assets/Backgorund-trees-blur.jpg);
     background-size: cover;
     background-repeat: no-repeat;

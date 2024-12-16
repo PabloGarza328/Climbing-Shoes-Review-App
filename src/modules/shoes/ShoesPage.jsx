@@ -35,9 +35,9 @@ function ShoesPage( {setShoe} ){
 
     // Deletes a movie when requested, and provides an error message if not.
     const onDeleteShoe = async _id => {
-        const response = await fetch(`/shoes/${_id}`, { method: 'DELETE' });
+        const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/shoes/${_id}`, { method: 'DELETE' });
           if (response.status === 200) {
-             const getResponse = await fetch('/shoes');
+             const getResponse = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/shoes`);
              const shoes = await getResponse.json();
              setShoes(shoes);
         } else {

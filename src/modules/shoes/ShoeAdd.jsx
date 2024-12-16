@@ -16,7 +16,7 @@ export const ShoeAdd = () => {
         event.preventDefault();
         const newShoe = { shoeModel, brand, durability, datePurchased };
         try {
-            const response = await fetch('/shoes/', {
+            const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/shoes/`, {
                 method: 'post',
                 body: JSON.stringify(newShoe),
                 headers: {

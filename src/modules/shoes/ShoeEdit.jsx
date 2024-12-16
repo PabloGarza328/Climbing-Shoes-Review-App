@@ -12,7 +12,7 @@ export const ShoeEdit = ( { shoeToEdit } ) => {
     const redirect = useNavigate();
 
     const editShoe = async () => {
-        const response = await fetch(`/shoes/${shoeToEdit._id}`, {
+        const response = await fetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/shoes/${shoeToEdit._id}`, {
             method: 'PUT',
             body: JSON.stringify({ 
                 shoeModel: shoeModel, 

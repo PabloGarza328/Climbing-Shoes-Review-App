@@ -164,7 +164,7 @@ nav.local a{
   .top_nav{
     background-color: var(--Contrasting-Orange);
     padding: 9px;
-    padding-top: -3px;
+    /* padding-top: -3px; */
     border-radius: 20%;
     margin-left: 5px;
     margin-right: 5px;

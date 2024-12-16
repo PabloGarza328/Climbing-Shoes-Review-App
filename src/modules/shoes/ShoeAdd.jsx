@@ -26,9 +26,9 @@ export const ShoeAdd = () => {
             if(response.status === 201 || response.status === 200){
                 alert(`Shoe review added to collection`);
                 redirect("/shoesPage");
-            } else {
-                alert(`Error adding shoe= ${response.status}`);
-            }
+            } else  response.json().then((data) => {
+                alert(`Error adding shoe= ${response.status} - ${data.message || 'No details provided'}`);
+            })
 
             
         } catch (error) {

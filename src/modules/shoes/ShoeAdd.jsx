@@ -15,7 +15,7 @@ export const ShoeAdd = () => {
     const addShoe = async (event) => {
         event.preventDefault();
         const newShoe = { shoeModel, brand, durability, datePurchased };
-        // try {
+        try {
             const response = await fetch('/shoes/', {
                 method: 'post',
                 body: JSON.stringify(newShoe),
@@ -28,10 +28,12 @@ export const ShoeAdd = () => {
                 redirect("/shoesPage");
             } else {
                 alert(`Error adding shoe= ${response.status}`);
-             }
-        // } catch (error) {
-        //     alert(`Database error = ${response.status}`);
-        // }
+            }
+
+            
+        } catch (error) {
+            alert(`Database error = ${response.status} - ${data.message || 'No details provided'}`);
+        }
     };
 
     return (

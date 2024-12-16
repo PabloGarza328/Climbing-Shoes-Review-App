@@ -15,12 +15,14 @@ function ShoesPage( {setShoe} ){
     const [shoes, setShoes] = useState([]);
 
     // Retrieves/loads all the movies in the collection, so they are visible. 
+    console.log("About to read shoes")
     const loadShoes = async () => {
         const response = await fetch('/shoes');
         const shoes = await response.json();
         setShoes(shoes);
          }
-    
+    console.log(shoes)
+
     // Updates the state of a single movie when it changes:
     const onEditShoe = async shoe => {
         setShoe(shoe);

@@ -1,0 +1,443 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+  /* @import 'node_modules/modern-normalize/modern-normalize.css';  npm install modern-normalize  Resets elements for browser consistency.  https://www.npmjs.com/package/modern-normalize */         
+  /* @import "component1.css";   Component-specific stylesheets, if any.   */
+  @import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap'); 
+
+
+/*   ----- Variables  -----  */
+:root {
+    --almost-Black: #050A0D;
+     --almost-Black-transparent: #050a0d7e;
+    --Contrasting-Orange: #f27329;
+    --Contrasting-Orange-transparent: #f2732980;
+    --green-Black: #344028;
+    --gree-White: #576A3F;
+    --calm-Blue: #6B9FBF;
+    --almost-white: rgb(226, 226, 226);
+    --almost-white-faded: rgba(226, 226, 226, 0.527);
+    --calm-blue_transparent: #6b9fbf93; 
+    --custom-color-name:;
+    --custom-embellishment-name:;
+    --required-red: rgb(252, 57, 57);
+    --placeholder-red: rgba(132, 24, 24, 0.622);
+  }
+
+  /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+  body {       /* Can alternatively define in html {}. */
+   
+    background-color:;
+    background-image:url(src/assets/Backgorund-trees-blur.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    height: 100%;
+    color:var(--almost-white);
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+    font-weight: light;
+    line-height: 20px;
+    margin: 0 auto;
+    max-width:1000px;
+  }
+  i{
+    font-size: 150%;
+  }
+
+  td i{
+    font-size: 120%;
+  }
+  
+input::placeholder, 
+textarea::placeholder {
+    font-family: "Sofia Sans Semi Condensed", sans-serif; /* Set the font family */
+    color:var(--placeholder-red);}              /* Set the font size */
+
+  /*  ----- Page layout blocks -----  */
+  header {
+    background-color: var(--almost-Black-transparent);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+
+  }
+  header img {
+    max-width: 30px;
+    margin-bottom: -3px;
+    margin-right: .5%;
+  }
+
+  main {
+    margin: 0, auto;
+    background-color: var(--calm-blue_transparent);
+    padding: 3%;
+
+  }
+  section {}
+  article {
+    margin-top: 15px;
+
+    border-top: 2px solid var(--Contrasting-Orange);
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+   .article_form{
+    border-top: 0px;
+    margin: 4px;
+    padding: 4px;
+
+  }
+  .red{
+    color: var(--required-red);
+  }
+
+  #message{
+   /* width: 210px; */
+  }
+    #topic1 {}
+    #topic2 {}
+  div {}
+  aside {}
+  footer {
+    text-align: center;
+    background-color: var(--almost-Black-transparent);
+    margin: 0;
+  }
+  #footer_trademark{
+    margin: 0;
+    line-height: 40px;
+  }
+
+  #totalprice{
+    text-align: right;
+    display: flex;
+  }
+
+  #submitOrder{
+  display: block;
+  margin-left: auto;
+  }
+
+  #quantity{margin-left: 7px;
+  margin-right: 7px;
+  }
+
+  html {
+    -webkit-text-size-adjust: 80%; /* Prevents mobile browsers from automatically scaling text */
+    -ms-text-size-adjust: 80%;
+    text-size-adjust: 80%;
+  }
+  
+  /* ----- Anchors ----- Text links */
+  a {
+    text-decoration:none
+  }
+  a:link {}
+  a:hover {
+    
+  }
+  a:active {}
+  a:visited {}
+  
+  /*  ----- Navigation ----- Override text links for navigation only.  */
+  nav {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    
+  }
+  nav.local {
+    display: flex;
+    justify-content: space-between;
+    color: #050A0D;
+    margin: 3% 1%;
+    padding: 2px 8px;
+    background-color: var(--almost-white-faded);
+    border-radius: 3px;
+}
+nav.local a{
+  padding: 1px 2px;
+}
+  .top_nav{
+    background-color: var(--Contrasting-Orange);
+    padding: 9px;
+    padding-top: -3px;
+    border-radius: 20%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .top_nav:hover{
+    background-color: var(--almost-Black); 
+    color: var(--almost-white);
+
+  }
+  nav a {
+  
+  }
+  nav a:hover {
+  
+    /* background-color: black */
+   /*  color var(--Contrasting-Orange-transparent)*/
+  }
+  
+  /*  -----  Typography  ----- */
+  p {}
+  br {}
+  ol, ul, dl {}
+  li {}
+  dt {}
+  dd {}
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Lexend Exa", sans-serif;
+    margin: 0px;
+  } 
+  h1 {}
+  h2 {}
+  h3 {}
+  h4 {}
+  h5 {}
+  h6 {}
+  
+  abbr {}
+  acronym {}
+  address {}
+  blockquote {}
+    q {}
+    cite {}
+  em {}
+  hr {}
+  mark {}
+  s {}
+  span {}
+  strong {}
+  sub {}
+  sup {}
+  time {}
+  
+  /*  ----- Coding or instructional typography ----- */
+  pre {}
+  code {}
+  kbd {
+    word-wrap: break-word;
+  }
+  samp {}
+  var {}
+  del {} 
+  ins {}
+  
+  /*  ----- Table ----- */
+  table {
+    margin-top: 5px;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+  caption {
+    font-size: 17px;
+    border-bottom: 2px solid var(--Contrasting-Orange-transparent);
+  }
+  thead {
+  }
+  tbody {}
+  tfoot {}
+  tr {}
+    tr:nth-child(even) {}
+  th {
+    font-size: 18px;
+    text-align: left;
+    border-bottom: 1px solid var(--Contrasting-Orange-transparent);
+    padding-top: 6px;
+    padding-bottom: 2px;
+    padding-right: 20px;
+  }
+  td {
+    border-bottom: 1px solid var(--Contrasting-Orange-transparent);
+    padding-right: 8px;
+  }
+    td:nth-child(1) {}
+  colgroup {}
+  data {}
+  datalist {}
+  
+  
+  /*  ----- Form ----- */
+  button, input, select, textarea {
+    font-size: inherit;
+    padding: 1.2%;
+    
+  }
+  input[type="email"]{
+    min-width: 230px;
+  }
+  input[type="text"]{
+    min-width: 200px;
+  }
+  input[type="number"]{
+    min-width: 90px;
+  }
+  form {}
+  fieldset {
+    border-color: var(--almost-Black);
+    flex-grow:1;
+  }
+    legend {
+      font-size: 22px;
+    }
+  label {
+    display: block;
+    border-top: 0px;
+    margin: 4px;
+    padding: 4px;
+    margin-bottom: 1px;
+    padding-bottom: 1px;
+    margin-left: 0px;
+
+  }
+  button {
+  }
+  input {
+    margin-bottom: 5px;
+  }
+  select {
+    font-size: 14px;
+  }
+    optgroup {}
+    option {}
+  textarea {
+    width: 90%;
+    max-width: 400px;
+  }
+  output {}
+  meter {}
+  progress {}
+  
+  
+  /* ----- Media ----- */
+  figure {
+    border: 2px solid #050A0D;
+    max-width: 230px;
+    margin-left: 5px;
+    padding: 6px;
+ 
+  }
+    figcaption {
+        max-width: 205px
+    }
+    figure img {
+        max-width: 230px;
+
+    }
+  svg {}
+  picture {}
+    source {}
+  iframe {}
+  video {}
+  audio {}
+  embed {}
+  object {}
+  
+  /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+  .gallery { 
+    display: flex;
+    flex-flow: row wrap; 
+    margin:0; 
+    margin-top: 15px;
+    padding:0;
+  }
+  .gallery figure{
+
+ 
+    
+  }
+  .form {
+    display: flex;
+    flex-flow: row wrap; 
+    /*flex-grow:2; */
+  }
+
+
+  
+  .floatright {}
+  .floatleft {}
+  .center-middle {}
+  
+  .ten {}
+  .twenty {}
+  .thirty {}
+  .forty {}
+  .fifty {}
+  .sixty {}
+  .seventy {}
+  .eighty {}
+  
+  .radius {}
+  .circle {}
+  .boxshadow {}
+  .tshadow {} 
+  .gradient {}
+  .shape {}
+  
+  @keyframes App-logo {}
+  
+  /*   ===== TABLET  media query overrides mobile styles ===== */
+  @media all and (min-width: 600px) {}
+  
+  /*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+  @media all and (min-width: 1080px) {}
+  
+  /*   ===== PRINT  media query overrides previous styles =====  */
+  @media print {}
+
+
+
+
+
+
+
+/* Default CSS STYLES */
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */

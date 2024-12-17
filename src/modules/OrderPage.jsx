@@ -11,7 +11,7 @@ function OrderPage({ products }){
             <article>
                     <p></p>
                     <table>
-                        <caption>Order one product</caption>
+                        <caption>Add or remove products</caption>
                             <thead>
                                 <tr>
                                     <th>Company</th>

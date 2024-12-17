@@ -39,3 +39,7 @@ This page showcases dynamic state updates and real-time calculations in a user-f
 * The app is deployed on Vercel, ensuring accessibility and fast performance.
 
 * Proper handling of environment variables and CORS configurations for secure and efficient communication between frontend and backend.
+
+## Home Page
+
+The home page serves as an introduction to the app and a brief exploration of key web development topics. It provides informative content designed to engage users and demonstrate my ability to present technical information in a clear and accessible way.

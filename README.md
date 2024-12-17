@@ -1,8 +1,41 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Climbing Shoes Review App
 
-Currently, two official plugins are available:
+### Link to project: https://pablo-garza-mern.vercel.app/shoesPage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
+This is a full-stack MERN (MongoDB, Express.js, React, Node.js) web application that allows users to manage climbing shoe reviews, track orders, and explore web development topics. The app is designed to showcase my web development skills and highlights key functionalities such as CRUD operations, dynamic state management, and responsive design
+
+
+## Features
+
+### 1. Shoes Page
+The "Shoes" page is the core feature of the app and supports full CRUD operations:
+
+* **Create**: Add reviews for climbing shoes, including brand, model, and durability rating.
+
+* **Read**: View all stored reviews dynamically fetched from a MongoDB database.
+
+* **Update**: Edit existing reviews to update information or fix errors.
+
+* **Delete**: Remove unwanted reviews easily.
+
+This page demonstrates integration of frontend and backend functionality with efficient database operations.
+
+
+### 2. Order Page
+The "Orders" page allows users to interact with products and track their purchases:
+
+* Add items to a shopping cart.
+
+* Monitor quantities of individual items.
+
+* View dynamically calculated subtotal and total prices
+
+This page showcases dynamic state updates and real-time calculations in a user-friendly interface.
+
+
+## Deployment
+* The app is deployed on Vercel, ensuring accessibility and fast performance.
+
+* Proper handling of environment variables and CORS configurations for secure and efficient communication between frontend and backend.

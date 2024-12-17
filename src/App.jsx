@@ -5,7 +5,7 @@ import './App.css'
 
 // Import Pages
 import HomePage   from './modules/HomePage.jsx';
-import GalleryPage from './modules/GalleryPage.jsx';
+// import GalleryPage from './modules/GalleryPage.jsx';
 import OrderPage from './modules/OrderPage.jsx';
 import StaffPage from './modules/StaffPage.jsx';
 import TopicsPage from './modules/TopicsPage.jsx';
@@ -47,11 +47,11 @@ function App() {
                 <Routes>
                     <Route path="/" element={<HomePage />}></Route>
                     <Route path="/contact" element={<ContactPage />}></Route>
-                    <Route path="/gallery" element={<GalleryPage />}></Route>
+                    {/* <Route path="/gallery" element={<GalleryPage />}></Route> */}
                     <Route path="/order" element={<OrderPage products={products}/>}></Route>
                     <Route path="/staff" element={<StaffPage />}></Route>
                     <Route path="/topics" element={<TopicsPage />}></Route>
-                    <Route path="/gallery" element={<GalleryPage />}></Route>
+                    {/* <Route path="/gallery" element={<GalleryPage />}></Route> */}
                     <Route path="/counter" element={<Counter />}></Route>   
                     
                     <Route path="/shoesPage" element={<ShoesPage setShoe={setShoes}/>}></Route>

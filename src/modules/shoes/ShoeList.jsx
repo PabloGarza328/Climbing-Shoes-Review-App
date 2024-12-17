@@ -9,7 +9,7 @@ function ShoeList({ shoes, onDelete, onEdit, onAdd}) {
     return (
         <>
         <table id="shoes">
-        <caption>Add or Edit Climbing Shoe Reviews</caption>
+        <caption>Add, Edit or Delete Climbing Shoe Reviews</caption>
         <thead>
             <tr>
                 <th>Model</th>
